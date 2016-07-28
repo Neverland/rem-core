@@ -1,6 +1,6 @@
 # rem-core
 
-使px单位的css属性自动转化为rem为单位的fis插件。
+使px单位的css属性自动转化为rem为单位的nodejs 包文件。
 
 -----------------
     - 使用node-css把css解析后,对px为单位对属性进行rem转换处理。
@@ -11,16 +11,10 @@
 ## flexible.js
 默认可以配合淘宝的[flexible.js](https://github.com/amfe/lib-flexible)使用
 
-## fis配置
+## 调用方式
 
 ```javascript
-fis.match('*.css', {
-    parser: fis.plugin('rem', {
-        dpr: 2,
-        rem: 750,
-        exclude: ['background-size']
-    })
-})
+    rem(content, file, config);
 ```
 
 
