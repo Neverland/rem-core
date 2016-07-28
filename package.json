@@ -1,0 +1,31 @@
+{
+  "name": "rem-core",
+  "version": "0.0.4",
+  "description": "gulp px单位转rem单位。可以配合淘宝flexible.js使用!",
+  "main": "index.js",
+  "bin": {
+    "rem-core": "./bin/main.js"
+  },
+  "scripts": {
+    "test": "node ./spec/test/main.js"
+  },
+  "keywords": [
+    "rem",
+    "px to rem",
+    "px2rem"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css": "^2.2.1"
+  },
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neverland/rem-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neverland/rem-core/issues"
+  },
+  "homepage": "https://github.com/Neverland/rem-core#readme"
+}
