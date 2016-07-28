@@ -15,13 +15,16 @@ var font = require('./lib/font/font.js');
 var px2rem = require('./lib/px2rem.js');
 
 module.exports = function (content, file, conf) {
+    // css文件第一行必须为 /*!@userem*/
+    if (!/(\/\*!@userem\*\/)/i.test(content)) {
+        return content;
+    }
+
     var styleSheet = css.parse(content);
     var rules = styleSheet.stylesheet.rules;
 
     function entry() {
-        // css文件第一行必须为 /*userem*/
-        if (!/(\/\*!@userem\*\/)/i.test(content)
-            || !rules.length) {
+        if (!rules.length) {
             // ignore file;
             return false;
         }
