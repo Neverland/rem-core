@@ -1,6 +1,6 @@
 {
   "name": "rem-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "使px单位转rem单位。可以配合淘宝flexible.js使用!",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "css": "^2.2.1"
+    "css": "^2.2.1",
+    "object-assign": "^4.1.0"
   },
   "readmeFilename": "README.md",
   "repository": {
