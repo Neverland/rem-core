@@ -7,7 +7,7 @@
 
 var rem = require('./bin/main.js');
 var objectAssign =  require('object-assign');
-var assign = Object.assign 
+var assign = Object.assign
         ? Object.assign
         : objectAssign;
 
