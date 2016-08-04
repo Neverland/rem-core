@@ -47,6 +47,9 @@ body {
 - rem `{Number}` 1rem=多少px `default` 18
 - min `{Number}` 最小转化值 `default` 3
 - exclude `{Array.<String>}` 忽略的样式 `default` `['width', 'height', 'background', 'background-size']`
+- fontSize2Rem: `{Boolean}` 字体大小是否转rem单位 `default` true 
+    *值为false时会根据dpr输出1倍,2倍,3倍大小的css样式, 这种模式更适合于以内容为主的阅读页面。
+    *可以根据实际需要写多个不同的配置
 - type `{?default}` 支持[flexible](https://github.com/amfe/lib-flexible)
 - dpr `{!Number}` 1, 2, 3 如设计稿的尺寸为
     *320-375 那么dpr为1 
@@ -56,7 +59,7 @@ body {
 ## about font-size
 - 对font-size进行了特殊处理,没有使用rem而是根据dpi输出三种大小字体
 
-### type: default 
+### type: default && fontSize2Rem: false
 
 ```css
 @media(-webkit-min-device-pixel-ratio: 2) {    
@@ -71,7 +74,7 @@ body {
 }
 ```
 
-### type: null
+### type: null && fontSize2Rem: false
 ```
 [data-dpr="1"] .course-name {
     font-size: 18px; 
