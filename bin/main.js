@@ -63,7 +63,8 @@ module.exports = function (content, file, conf) {
                     return false;
                 }
 
-                if (property.toLowerCase() === 'font-size') {
+                if (property.toLowerCase() === 'font-size'
+                    && conf.fontSize2Rem === false) {
                     fontFilter.collection(item, value);
                 }
                 else {

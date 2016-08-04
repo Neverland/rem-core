@@ -16,6 +16,7 @@ module.exports = function (content, file, conf) {
         rem: 18,
         min: 3,
         dpr: 2,
+        fontSize2Rem: true,
         exclude: []
     };
     var cfg = assign({}, defaultConf, conf);
