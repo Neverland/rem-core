@@ -50,7 +50,7 @@ body {
 - fontSize2Rem: `{Boolean}` 字体大小是否转rem单位 `default` true 
     *值为false时会根据dpr输出1倍,2倍,3倍大小的css样式, 这种模式更适合于以内容为主的阅读页面。
     *可以根据实际需要写多个不同的配置
-- type `{?default}` 支持[flexible](https://github.com/amfe/lib-flexible)
+- type `{?string}` default `default` 支持[flexible](https://github.com/amfe/lib-flexible)
 - dpr `{!Number}` 1, 2, 3 如设计稿的尺寸为
     *320-375 那么dpr为1 
     *640-720 那么dpr为2 
