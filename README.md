@@ -20,7 +20,7 @@
 
 ## Usage
 
-* 需要在css文件头部声明/*!@userem*/
+* 需要在css文件头部声明/* !@userem */
 
 ```css
 body {
