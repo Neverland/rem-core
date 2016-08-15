@@ -15,8 +15,7 @@ var font = require('./lib/font/font.js');
 var px2rem = require('./lib/px2rem.js');
 
 module.exports = function (content, file, conf) {
-    // css文件第一行必须为 /*!@userem*/
-    if (!/(\/\*!@userem\*\/)/i.test(content)) {
+    if (/(\/\*!@norem\*\/)/i.test(content)) {
         return content;
     }
 
